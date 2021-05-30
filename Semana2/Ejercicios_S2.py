@@ -1,51 +1,42 @@
-base = 16
-num = 67
+#Ej 6
+
+base = 2
+num = 104
 
 #Primera Division
 residuo = num % base
 cociente = num // base
-n1 = residuo
+bit1 = residuo
+
 
 #Segunda Division
 residuo = cociente % base
 cociente = cociente // base
-n2 = residuo
+bit2 = residuo
 
+# Terceras division
+residuo = cociente % base
+cociente = cociente // base
+bit3 = residuo
 
-if n1 == 10:
-  n1 = "a"
+#Cuarta Division
+residuo = cociente % base
+cociente = cociente // base
+bit4 = residuo
 
-elif n1 == 11:
-  n1 = "b"
+#Quinta Division
+residuo = cociente % base
+cociente = cociente // base
+bit5 = residuo
 
-elif n1 == 12:
-  n1 = "c"
+#Sexta Division
+residuo = cociente % base
+cociente = cociente // base
+bit6 = residuo
 
-elif n1 == 13:
-  n1 = "d"
+#Septima Division
+residuo = cociente % base
+cociente = cociente // base
+bit7 = residuo
 
-elif n1 == 14:
-  n1 = "e"
-
-elif n1 == 15:
-  n1 = "f"
-
-if n2 == 10:
-  n2 = "a"
-
-elif n2 == 11:
-  n2 = "b"
-
-elif n2 == 12:
-  n2 = "c"
-
-elif n2 == 13:
-  n2 = "d"
-
-elif n2 == 14:
-  n2 = "e"
-
-elif n2 == 15:
-  n2 = "f"
-
-print("{} = {}{}".format(num, n2, n1))
+print("{} = {}{}{}{}{}{}{}".format(num, bit7, bit6, bit5, bit4, bit3, bit2, bit1))
