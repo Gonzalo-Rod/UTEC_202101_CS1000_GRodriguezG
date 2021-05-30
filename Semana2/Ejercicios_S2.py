@@ -1,8 +1,8 @@
-base=16
-num=99
+base = 16
+num = 67
 
 #Primera Division
-residuo = num  % base
+residuo = num % base
 cociente = num // base
 n1 = residuo
 
@@ -10,6 +10,7 @@ n1 = residuo
 residuo = cociente % base
 cociente = cociente // base
 n2 = residuo
+
 
 if n1 == 10:
   n1 = "a"
