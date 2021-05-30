@@ -1,26 +1,56 @@
-#Ej 9 13
+#Ej 10, 11
 
-base = 8
-num = int(input("Elige el numer que quieres convertir [587 / 3054]: "))
+base = 2
+num = int(input("Elija el numero que quiere convertir [788, 1023]: "))
 
-#Primera ZeroDivisionE
+#Primera division
 residuo = num % base
 cociente = num // base
-n1 = residuo
+bit1 = residuo
 
-#Segunda Division
+#Segunda division
 residuo = cociente % base
 cociente = cociente // base
-n2 = residuo
+bit2 = residuo
 
-# Terceras division
+#Tercera division
 residuo = cociente % base
 cociente = cociente // base
-n3 = residuo
+bit3 = residuo
 
-#Cuarta Divisin
+#Cuarta division
 residuo = cociente % base
 cociente = cociente // base
-n4 = residuo
+bit4 = residuo
 
-print("{} = {}{}{}{}".format(num, n4, n3, n2, n1))
+#Quinta division
+residuo = cociente % base
+cociente = cociente // base
+bit5 = residuo
+
+#Sexta division
+residuo = cociente % base
+cociente = cociente // base
+bit6 = residuo
+
+#Septima division
+residuo = cociente % base
+cociente = cociente // base
+bit7 = residuo
+
+#Octava division
+residuo = cociente % base
+cociente = cociente // base
+bit8 = residuo
+
+#Novena division
+residuo = cociente % base
+cociente = cociente // base
+bit9 = residuo
+
+#Decima division
+residuo = cociente % base
+cociente = cociente // base
+bit10 = residuo
+
+print("{} = {}{}{}{}{}{}{}{}{}{}".format(num, bit10, bit9, bit8, bit7, bit6, bit5, bit4, bit3, bit2, bit1))
