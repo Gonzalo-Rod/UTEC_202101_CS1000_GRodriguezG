@@ -1,73 +1,71 @@
-base = 16
-num = 1054
+#Ej 14
 
-#Primera Division
-residuo = num  % base
+base = 2
+num = 5785
+
+#Primera division
+residuo = num % base
 cociente = num // base
-n1 = residuo
+bit1 = residuo
 
-#Segunda Division
+#Segunda division
 residuo = cociente % base
 cociente = cociente // base
-n2 = residuo
+bit2 = residuo
 
-#Tercera Division
+#Tercera division
 residuo = cociente % base
 cociente = cociente // base
-n3 = residuo
+bit3 = residuo
 
-if n1 == 10:
-  n1 = "a"
+#Cuarta division
+residuo = cociente % base
+cociente = cociente // base
+bit4 = residuo
 
-elif n1 == 11:
-  n1 = "b"
+#Quinta division
+residuo = cociente % base
+cociente = cociente // base
+bit5 = residuo
 
-elif n1 == 12:
-  n1 = "c"
+#Sexta division
+residuo = cociente % base
+cociente = cociente // base
+bit6 = residuo
 
-elif n1 == 13:
-  n1 = "d"
+#Septima division
+residuo = cociente % base
+cociente = cociente // base
+bit7 = residuo
 
-elif n1 == 14:
-  n1 = "e"
+#Octava division
+residuo = cociente % base
+cociente = cociente // base
+bit8 = residuo
 
-elif n1 == 15:
-  n1 = "f"
+#Novena division
+residuo = cociente % base
+cociente = cociente // base
+bit9 = residuo
 
-if n2 == 10:
-  n2 = "a"
+#Decima division
+residuo = cociente % base
+cociente = cociente // base
+bit10 = residuo
 
-elif n2 == 11:
-  n2 = "b"
+#Undecima division
+residuo = cociente % base
+cociente = cociente // base
+bit11 = residuo
 
-elif n2 == 12:
-  n2 = "c"
+#Duodecima division
+residuo = cociente % base
+cociente = cociente // base
+bit12 = residuo
 
-elif n2 == 13:
-  n2 = "d"
+#Trigesima division
+residuo = cociente % base
+cociente = cociente // base
+bit13 = residuo
 
-elif n2 == 14:
-  n2 = "e"
-
-elif n2 == 15:
-  n2 = "f"
-
-if n3 == 10:
-  n3 = "a"
-
-elif n3 == 11:
-  n3 = "b"
-
-elif n3 == 12:
-  n3 = "c"
-
-elif n3 == 13:
-  n3 = "d"
-
-elif n3 == 14:
-  n3 = "e"
-
-elif n3 == 15:
-  n3 = "f"
-
-print("{} = {}{}{}".format(num,n3, n2, n1))
+print("{} = {}{}{}{}{}{}{}{}{}{}{}{}{}".format(num, bit13, bit12, bit11, bit10, bit9, bit8, bit7, bit6, bit5, bit4, bit3, bit2, bit1))
