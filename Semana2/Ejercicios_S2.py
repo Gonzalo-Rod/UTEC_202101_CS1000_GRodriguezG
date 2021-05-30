@@ -1,8 +1,8 @@
-base = 16
-num = 48
+base=16
+num=99
 
 #Primera Division
-residuo = num % base
+residuo = num  % base
 cociente = num // base
 n1 = residuo
 
