@@ -1,13 +1,12 @@
-#Ej 6
+# Ej 7
 
 base = 2
-num = 104
+num = 254
 
 #Primera Division
 residuo = num % base
 cociente = num // base
 bit1 = residuo
-
 
 #Segunda Division
 residuo = cociente % base
@@ -39,4 +38,9 @@ residuo = cociente % base
 cociente = cociente // base
 bit7 = residuo
 
-print("{} = {}{}{}{}{}{}{}".format(num, bit7, bit6, bit5, bit4, bit3, bit2, bit1))
+#Octava  Division
+residuo = cociente % base
+cociente = cociente // base
+bit8 = residuo
+
+print("{} = {}{}{}{}{}{}{}{}".format(num,bit8, bit7, bit6, bit5, bit4, bit3, bit2, bit1))
