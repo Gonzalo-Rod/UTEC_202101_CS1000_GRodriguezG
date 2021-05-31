@@ -1,14 +1,16 @@
 
-print("Ejercicio 2")
+print("Ejercicio 3")
 print("-"*40)
-nombres = ["JUAN", "KARLA", "MANUEL", "FIORELLA"]
-nombres_minus = []
-for nom in nombres:
-    nom = nom.lower()
-    nombres_minus.append(nom)
-print(nombres_minus)
+#lee 5 números enteros
+# desde teclado y almacénalos en una lista
+lista = []
+for i in range(5):
+    n = int(input())
+    lista.append(n)
+print(lista)
+print(lista)
 
 #Programación declarativa
-nombres_minus = [nom.lower() for nom in nombres]
-print(nombres_minus)
+lista = [int(input()) for i in range(5)]
+print(lista)
 
