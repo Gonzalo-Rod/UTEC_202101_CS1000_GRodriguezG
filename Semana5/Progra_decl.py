@@ -1,12 +1,14 @@
-print("Ejercicio 1")
+
+print("Ejercicio 2")
 print("-"*40)
-numeros = [1, 3, 5, 10]
-#Programación Imperativa
-suma = 0
-for i in numeros:
-    suma += i*2
-print(suma)
+nombres = ["JUAN", "KARLA", "MANUEL", "FIORELLA"]
+nombres_minus = []
+for nom in nombres:
+    nom = nom.lower()
+    nombres_minus.append(nom)
+print(nombres_minus)
 
 #Programación declarativa
-suma = sum([item *2 for item in numeros])
-print(suma)
+nombres_minus = [nom.lower() for nom in nombres]
+print(nombres_minus)
+
